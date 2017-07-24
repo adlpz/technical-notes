@@ -1,0 +1,20 @@
+In case due to some hardware issue you can't wait for the Arch
+people to build a patched kernel, there is an AUR linux-mainline
+package with the latest upstream version.
+
+There is even an unofficial repo source with compiled packages.
+
+[miffe]
+Server = http://arch.miffe.org/$arch/
+
+Then you can just do
+
+pacman -S linux-mainline
+
+There are some fixes needed in order to get it all running, as:
+
+- Virtualbox
+
+Rebuild the virtualbox kernel modules. In order to do this, just
+reinstall the `virtualbox-guest-dkms` package. Then reload any
+needed modules (check `sudo modprobe vbox*` and `TAB`)

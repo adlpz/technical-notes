@@ -1,0 +1,30 @@
+# Instalar software
+
+Per a fer funcionar trivialment el modem utilitzem un programa
+que es diu "sakis3g". La web "oficial" pareix estar caiguda i
+ningu mante la entrada en el AUR, per tant cal fer alguns canvis.
+
+$ apacman -S sakis3g
+
+Quan demane si volem editar el PKGBUILD, diem que si, i canviem
+
+- Source URL a "https://sourceforge.net/projects/vim-n4n0/files/sakis3g.tar.gz"
+- Hash MD5 a (versio 0.2.e) "2a040d7901b629d42718502eae6048e6"
+
+Una copia del paquet esta guardada amb aquest document.
+
+# Connectar al 3G
+
+Una vegada instalat insertem el USB. Per defecte monta un CDROM virtual
+amb els drivers. Cal expulsarlo per a que el USB entre en mode Modem.
+
+$ eject /dev/sr0
+
+Finalment executem sakis3g i seguim les instruccions.
+
+- Seleccionar el Modem WCDMA ZTE
+- Introduir PIN (2010 en la SIM de Syrtrans)
+- Seleccionar Interface #4
+- Seleccionar xarxa (eg Movistar)
+
+I ja deuria funcionar.

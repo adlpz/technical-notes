@@ -1,0 +1,13 @@
+Per a instalar la impresora Brother DCP1610W
+
+Cal baixar els dos arxius de la web de brother (cupswapper i lpd)
+
+* Descomprimir tot (rpmextract.sh en Pacman)
+* Copiar tot el contingut de opt/brother a /usr/share/brother
+* Copiar opt/brother/Printers/DCP1610W/cupswrapper/brother-DCP1610W-cups-en.ppd a
+  /usr/share/cups/modelDCP1610W.ppd
+* Copiar opt/brother/Printers/DCP1610W/cupswrapper/brother_lpdwrapper_DCP1610W a
+  /usr/lib/cups/filter/brother_lpdwrapper_DCP1610W
+* Crear /var/spoo/lpd/DCP1610W
+
+Amnb CUPS cal instalar la impresora com IPP, amb url ipp://LA_IP/ipp

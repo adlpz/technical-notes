@@ -1,0 +1,6 @@
+Al instalar la impressora de Vimoka a Barbacode, va fer falta instalar
+este paquet per a ferla funcionar. Del AUR.
+
+apacman -S foo2zjs-nightly
+
+Despres no pirula igualment, pero bueno

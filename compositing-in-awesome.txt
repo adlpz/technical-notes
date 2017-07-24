@@ -1,0 +1,16 @@
+
+Thu Aug 11 19:14:36 CEST 2016
+
+Due to having changed the X11 driver to xf86-video-modesetting
+I was getting lots of screen tearing.
+
+I figured out a compositing manage would help. Decided on compton.
+
+$ pacman -S compton
+
+Then we make it start when doing startx by adding:
+
+compton -b
+
+before executing the window manager.
+

@@ -1,0 +1,17 @@
+Source: http://www.htcmania.com/showthread.php?t=1234569
+
+Install TWRP, wipe all and then flash:
+
+- Firmware for CM13
+- Nightly of CM13 for KENZO (just download latest from cyanogenmod)
+- Patch for GOODIX sensor
+- Radeon Kernel 2.8 (on the wizard, select GOODIX)
+- OpenGapps (just download latest, amd64, Android 6.0)
+
+Done!
+
+All files included in files
+
+PS: Front Camera
+
+http://forum.xda-developers.com/redmi-note-3/how-to/fix-camera-fix-official-cm13-builds-t3454893

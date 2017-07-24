@@ -1,0 +1,38 @@
+Thu Aug 11 16:38:10 CEST 2016
+
+Due to having tearing issues (mainly in Slack, terminal and others) I investigated
+and apparently there is a generic Xorg driver for all the 2D stuff, which means I
+don't have to use the buggy Intel driver, xf86-video-intel
+
+1. Add i915 driver to Early KMS Start
+
+In order for the Kernel Mode Setting stuff (that is basically getting the gpu driver
+into kernel space, for faster term swtiching and full framebuffer nice things in the
+ttys) we have to:
+
+- Add "i915" to the FILES line in /etc/mkinitcpio.conf
+- Rebuild the initramfs: mkinitcpio -p linux
+
+2. Remove the old driver and config
+
+That is just:
+
+- pacman -R xf86-video-intel
+- rm -rf /etc/X11/xorg.conf.d/20-intel.conf
+
+For reference, this was the 20-intel.conf's contents:
+
+Section "Device"
+        Identifier      "Intel Graphics"
+        Driver          "intel"
+ 	#Option 		"SwapbuffersWait" "true"
+   	Option 		"AccelMethod"  "sna"
+        Option          "TearFree" "true"
+EndSection
+
+3. Reboot and done
+
+This fixes all tearing and weird artifacts. It did though make urxvt (and xterm) crash
+the system. This was fixed at the end by updating the bios to A07 (on the XPS13).
+
+

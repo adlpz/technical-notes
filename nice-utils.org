@@ -1,0 +1,12 @@
+# Tools
+
+- tree, lists files as tree
+- visidata (aur visidata-git):
+    Handle and massage tabular data in the CLI
+- ncdu
+    Find large files and folders
+- numo
+    Quick ClojureScript REPL
+- inotifywait (inotify-tools)
+    Watch file event changes. E.g:
+        while inotifywait -e close_write some-file.txt; do ./some-script some-file.txt; done

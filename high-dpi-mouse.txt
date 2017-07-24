@@ -1,0 +1,21 @@
+Linux by default thinks all mouses are 1000dpi. To change that, add a file 
+to the udev hwdb, e.g. for the Razer DeathAdder, add
+
+mouse:usb:v1532p0029:name:Razer Razer DeathAdder:
+  MOUSE_DPI=2500@1092
+
+To /etc/udev/hwdb.d/71-mouse.hwdb
+
+And then do
+
+sudo udevadm hwdb --update
+
+## Update May 2017
+
+As of May 2017 and after rebooting mouse was very slow. Removed the file and ran
+again udevadm. Now works well. Maybe this is now fixed OOTB??
+
+## Second Update May 2017
+
+Apparently after using the mouse on Windows the mouse is stuck in high DPI mode,
+and if I use on the desktop linux then on low DPI.
