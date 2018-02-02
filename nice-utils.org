@@ -1,6 +1,7 @@
 # Tools
 
-- tree, lists files as tree
+- tree:
+    LISTS FILEs as tree
 - visidata (aur visidata-git):
     Handle and massage tabular data in the CLI
 - ncdu
@@ -10,3 +11,15 @@
 - inotifywait (inotify-tools)
     Watch file event changes. E.g:
         while inotifywait -e close_write some-file.txt; do ./some-script some-file.txt; done
+- teamocil (aur teamocil)
+    Configurations to autostart tmux layouts with different things
+- namei
+    namei -t /path/to/file -- Show permissions for every dir up to file
+- timeout
+    Set timeout for program exec
+- toilet (aur toilet && toilet-fonts)
+    Nice BIG TEXT for terminal
+- pdftk (aur pdftk-bin)
+    Nice tool to manipulate PDFs. e.g. pdftk some.pdf cat 1 3-5 output new.pdf -- Take pages 1, 3, 4 and 5 and build a new PDF with them.
+- fd (fd-rs)
+    Alternative to find, faster and with nicer syntax. See: https://github.com/sharkdp/fd

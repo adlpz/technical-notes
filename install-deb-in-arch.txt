@@ -1,0 +1,7 @@
+In order to install a .deb package on Arch, we can either
+search for it on the AUR (obvs...) or try with "debtap"
+
+Debtap is in the AUR and it transforms the .deb package
+into a .tar.xz
+
+Then just install with pacman -U

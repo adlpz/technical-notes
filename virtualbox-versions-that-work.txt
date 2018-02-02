@@ -1,0 +1,4 @@
+Combinations confirmed working:
+
+VirtualBox 5.1.30_OSE
+Kernel 3.13.11-1-ARCH (Maybe also 3.13.12-1-ck-broadwell)

@@ -1,0 +1,12 @@
+My system swaps too much important program memory, so things slow down and
+are unresponsive on high ram loads. In order to prevent so much swapping
+change the vm.swappiness sysctl param to 10, 1 or even 0 (default 60).
+
+In the same way, the kernel tends to reclaim memory used for inode cache
+too eagerly, making browsing the fs too slow. Change the mv.vfs_cache_pressure
+sysctl param to something like 50 (default 100).
+
+To have both persist reboot, add to /etc/sysctl.d/99-sysctl.conf
+
+vm.wrappiness=1
+vm.vfs_cache_pressure=50
