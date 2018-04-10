@@ -20,6 +20,11 @@
 - toilet (aur toilet && toilet-fonts)
     Nice BIG TEXT for terminal
 - pdftk (aur pdftk-bin)
-    Nice tool to manipulate PDFs. e.g. pdftk some.pdf cat 1 3-5 output new.pdf -- Take pages 1, 3, 4 and 5 and build a new PDF with them.
+    Nice tool to manipulate PDFs. e.g.
+    - pdftk some.pdf cat 1 3-5 output new.pdf -- Take pages 1, 3, 4 and 5 and build a new PDF with them.
+    - pdftk A=odd_pages.pdf B=even_pages.pdf shuffle A B output collated_pages.pdf -- Take odd/even from 2 pdfs and merge
+    - pdftk A=odd_pages.pdf B=even_pages.pdf shuffle A Bend-1 output collated_pages.pdf -- Same, but the even pages are backwards (usual when scanning both)
 - fd (fd-rs)
     Alternative to find, faster and with nicer syntax. See: https://github.com/sharkdp/fd
+- gotop (aur gotop-bin)
+    Nice alternative to top, showing CPU graphic, temps, memory, network usage and disk usage all in one go.
