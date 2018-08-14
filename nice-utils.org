@@ -28,3 +28,7 @@
     Alternative to find, faster and with nicer syntax. See: https://github.com/sharkdp/fd
 - gotop (aur gotop-bin)
     Nice alternative to top, showing CPU graphic, temps, memory, network usage and disk usage all in one go.
+- bat (aur bat)
+    Alternative to cat, with line numbers, syntax highlight and pipeable to less with all colors kept.
+- jrnl (aur jrnl)
+    Alternative to usual bash-alias journaling command with search and nice things.
