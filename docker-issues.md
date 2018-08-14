@@ -11,3 +11,6 @@ systemd.legacy_systemd_cgroup_controller=yes
 
 Rebuild the grub scripts and reboot
 
+# Docker fails randomly (like docker-composer errors about python)
+
+Use `docker-bin` and `docker-compose-bin` from AUR instead, they seem more stable.

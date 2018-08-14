@@ -32,3 +32,5 @@
     Alternative to cat, with line numbers, syntax highlight and pipeable to less with all colors kept.
 - jrnl (aur jrnl)
     Alternative to usual bash-alias journaling command with search and nice things.
+- fkill (aur fkill)
+    Kill with autocomplete by name, port, etc.
