@@ -34,3 +34,9 @@
     Alternative to usual bash-alias journaling command with search and nice things.
 - fkill (aur fkill)
     Kill with autocomplete by name, port, etc.
+- dive (aur dive)
+    Inspect Docker images nicely
+- marp (aur marp)
+    Easy slides with Markdown. Exports to PDF.
+- swaks
+    SMTP Swiss Army Tool
