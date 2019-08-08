@@ -2,7 +2,7 @@
 
 # In order to disable the MATE panel we can remove it from the required components
 
-settings get org.mate.session.required-components panel
+gsettings get org.mate.session.required-components panel
 
 # Then kill it
 
