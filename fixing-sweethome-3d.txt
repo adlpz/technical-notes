@@ -1,0 +1,4 @@
+If the application claims there's no graphic support for 3D rendering
+you can switch to Java3D 1.5 by using:
+SWEETHOME3D_JAVA3D=1.5 sweethome3d
+or set the SWEETHOME3D_JAVA3D environment variable in your profile
